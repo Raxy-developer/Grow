@@ -1,0 +1,512 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Shop Grow a Garden - Buy Coins</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: #0f172a; /* dark blue-black background */
+      overflow-x: hidden;
+      position: relative;
+      min-height: 100vh;
+    }
+    /* Particle styles */
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.6;
+      animation: float 10s linear infinite;
+      background: radial-gradient(circle, #3b82f6 0%, #1e40af 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.6;
+      }
+      50% {
+        opacity: 0.3;
+      }
+      100% {
+        transform: translateY(-100vh) translateX(20px);
+        opacity: 0;
+      }
+    }
+  </style>
+ </head>
+ <body class="flex flex-col min-h-screen relative text-white">
+  <!-- Particles -->
+  <div aria-hidden="true">
+    <div
+      class="particle"
+      style="width: 12px; height: 12px; left: 10%; bottom: -20px; animation-delay: 0s;"
+    ></div>
+    <div
+      class="particle"
+      style="width: 8px; height: 8px; left: 25%; bottom: -30px; animation-delay: 2s;"
+    ></div>
+    <div
+      class="particle"
+      style="width: 15px; height: 15px; left: 40%; bottom: -25px; animation-delay: 4s;"
+    ></div>
+    <div
+      class="particle"
+      style="width: 10px; height: 10px; left: 55%; bottom: -20px; animation-delay: 1.5s;"
+    ></div>
+    <div
+      class="particle"
+      style="width: 7px; height: 7px; left: 70%; bottom: -30px; animation-delay: 3.5s;"
+    ></div>
+    <div
+      class="particle"
+      style="width: 14px; height: 14px; left: 85%; bottom: -25px; animation-delay: 5s;"
+    ></div>
+    <div
+      class="particle"
+      style="width: 9px; height: 9px; left: 95%; bottom: -20px; animation-delay: 4.5s;"
+    ></div>
+  </div>
+
+  <header class="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 shadow-md relative z-10">
+    <div
+      class="container mx-auto px-4 py-4 flex items-center justify-between"
+    >
+      <div class="flex items-center space-x-3">
+        <img
+          alt="Logo of Grow a Garden shop with a green sprout icon"
+          class="w-12 h-12"
+          height="48"
+          src="https://storage.googleapis.com/a1aa/image/db379e6a-33a1-4110-d36a-c69b5d7a2b26.jpg"
+          width="48"
+        />
+        <h1 class="text-2xl font-semibold text-white">Grow a Garden Shop</h1>
+      </div>
+      <nav class="hidden md:flex space-x-6 font-medium text-white">
+        <a class="hover:text-blue-300 transition" href="#">Home</a>
+        <a class="hover:text-blue-300 transition" href="#">Shop</a>
+        <a class="hover:text-blue-300 transition" href="#">About</a>
+        <a class="hover:text-blue-300 transition" href="#">Contact</a>
+        <a
+          href="#checkout"
+          class="hover:text-blue-300 transition font-semibold border border-blue-300 rounded-md px-3 py-1"
+          >Checkout</a
+        >
+      </nav>
+      <button
+        aria-label="Toggle menu"
+        class="md:hidden text-blue-200 hover:text-white focus:outline-none"
+        id="menu-btn"
+      >
+        <i class="fas fa-bars fa-lg"></i>
+      </button>
+    </div>
+    <nav
+      class="md:hidden bg-blue-800 text-blue-200 px-4 py-3 space-y-2 hidden"
+      id="mobile-menu"
+    >
+      <a class="block hover:text-white font-medium" href="#">Home</a>
+      <a class="block hover:text-white font-medium" href="#">Shop</a>
+      <a class="block hover:text-white font-medium" href="#">About</a>
+      <a class="block hover:text-white font-medium" href="#">Contact</a>
+      <a
+        href="#checkout"
+        class="block hover:text-white font-semibold border border-blue-300 rounded-md px-3 py-1 text-center"
+        >Checkout</a
+      >
+    </nav>
+  </header>
+
+  <main class="flex-grow container mx-auto px-4 py-8 relative z-10">
+    <h2 class="text-3xl font-bold text-blue-300 mb-6 text-center">
+      Buy Coins for Your Garden
+    </h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"
+    >
+      <div
+        class="bg-blue-900 rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition"
+      >
+        <img
+          alt="Illustration of 2 trillion golden coins stacked with sparkles"
+          class="mb-4 w-28 h-28 object-contain"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/f1e93ca8-db27-463a-2029-c08b6d3e4a37.jpg"
+          width="120"
+        />
+        <h3 class="text-xl font-semibold text-blue-300 mb-2">2 Trillion Coins</h3>
+        <p class="text-blue-400 mb-4">Perfect starter pack to grow your garden.</p>
+        <button
+          class="bg-blue-700 text-white px-5 py-2 rounded-md hover:bg-blue-800 transition w-full"
+          data-coin="2 Trillion Coins"
+          data-price="6k"
+        >
+          Buy for 6k
+        </button>
+      </div>
+      <div
+        class="bg-blue-900 rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition"
+      >
+        <img
+          alt="Illustration of 3 trillion golden coins with leaves growing around them"
+          class="mb-4 w-28 h-28 object-contain"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/451c8650-a8ef-4765-43bf-a67a22a7cdf4.jpg"
+          width="120"
+        />
+        <h3 class="text-xl font-semibold text-blue-300 mb-2">3 Trillion Coins</h3>
+        <p class="text-blue-400 mb-4">Boost your garden growth quickly.</p>
+        <button
+          class="bg-blue-700 text-white px-5 py-2 rounded-md hover:bg-blue-800 transition w-full"
+          data-coin="3 Trillion Coins"
+          data-price="7k"
+        >
+          Buy for 7k
+        </button>
+      </div>
+      <div
+        class="bg-blue-900 rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition"
+      >
+        <img
+          alt="Illustration of 4 trillion golden coins with a small garden sprout on top"
+          class="mb-4 w-28 h-28 object-contain"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/4f3b04ab-fc27-4144-f9dd-288c81b1f096.jpg"
+          width="120"
+        />
+        <h3 class="text-xl font-semibold text-blue-300 mb-2">4 Trillion Coins</h3>
+        <p class="text-blue-400 mb-4">Great value for serious gardeners.</p>
+        <button
+          class="bg-blue-700 text-white px-5 py-2 rounded-md hover:bg-blue-800 transition w-full"
+          data-coin="4 Trillion Coins"
+          data-price="8k"
+        >
+          Buy for 8k
+        </button>
+      </div>
+      <div
+        class="bg-blue-900 rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition"
+      >
+        <img
+          alt="Illustration of 5 trillion golden coins with a watering can pouring water"
+          class="mb-4 w-28 h-28 object-contain"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/57343e3f-e5c5-4f9d-b0d9-1d019aa5da15.jpg"
+          width="120"
+        />
+        <h3 class="text-xl font-semibold text-blue-300 mb-2">5 Trillion Coins</h3>
+        <p class="text-blue-400 mb-4">Water your garden with extra coins.</p>
+        <button
+          class="bg-blue-700 text-white px-5 py-2 rounded-md hover:bg-blue-800 transition w-full"
+          data-coin="5 Trillion Coins"
+          data-price="10k"
+        >
+          Buy for 10k
+        </button>
+      </div>
+      <div
+        class="bg-blue-900 rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition"
+      >
+        <img
+          alt="Illustration of 6 trillion golden coins with a sun shining above"
+          class="mb-4 w-28 h-28 object-contain"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/e95e0c80-63d0-4a17-45d3-6dd59f43b8cd.jpg"
+          width="120"
+        />
+        <h3 class="text-xl font-semibold text-blue-300 mb-2">6 Trillion Coins</h3>
+        <p class="text-blue-400 mb-4">Sunshine boost for your garden coins.</p>
+        <button
+          class="bg-blue-700 text-white px-5 py-2 rounded-md hover:bg-blue-800 transition w-full"
+          data-coin="6 Trillion Coins"
+          data-price="13k"
+        >
+          Buy for 13k
+        </button>
+      </div>
+      <div
+        class="bg-blue-900 rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition"
+      >
+        <img
+          alt="Illustration of 7 trillion golden coins with a garden fence in the background"
+          class="mb-4 w-28 h-28 object-contain"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/fca86308-06b3-4d3f-2a28-88648371e85a.jpg"
+          width="120"
+        />
+        <h3 class="text-xl font-semibold text-blue-300 mb-2">7 Trillion Coins</h3>
+        <p class="text-blue-400 mb-4">Secure your garden with more coins.</p>
+        <button
+          class="bg-blue-700 text-white px-5 py-2 rounded-md hover:bg-blue-800 transition w-full"
+          data-coin="7 Trillion Coins"
+          data-price="15k"
+        >
+          Buy for 15k
+        </button>
+      </div>
+      <div
+        class="bg-blue-900 rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition"
+      >
+        <img
+          alt="Illustration of 8 trillion golden coins with a garden shovel and rake crossed"
+          class="mb-4 w-28 h-28 object-contain"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/070f2ae8-0b44-46c9-19cc-338b9d6b855e.jpg"
+          width="120"
+        />
+        <h3 class="text-xl font-semibold text-blue-300 mb-2">8 Trillion Coins</h3>
+        <p class="text-blue-400 mb-4">Tools to cultivate your coin garden.</p>
+        <button
+          class="bg-blue-700 text-white px-5 py-2 rounded-md hover:bg-blue-800 transition w-full"
+          data-coin="8 Trillion Coins"
+          data-price="16k"
+        >
+          Buy for 16k
+        </button>
+      </div>
+      <div
+        class="bg-blue-900 rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition"
+      >
+        <img
+          alt="Illustration of 9 trillion golden coins with a garden basket full of coins"
+          class="mb-4 w-28 h-28 object-contain"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/d1a5ba8a-6bc8-4800-6916-ebb2ad179ef3.jpg"
+          width="120"
+        />
+        <h3 class="text-xl font-semibold text-blue-300 mb-2">9 Trillion Coins</h3>
+        <p class="text-blue-400 mb-4">Harvest a big basket of coins.</p>
+        <button
+          class="bg-blue-700 text-white px-5 py-2 rounded-md hover:bg-blue-800 transition w-full"
+          data-coin="9 Trillion Coins"
+          data-price="20k"
+        >
+          Buy for 20k
+        </button>
+      </div>
+      <div
+        class="bg-blue-900 rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition"
+      >
+        <img
+          alt="Illustration of 10 trillion golden coins stacked high with a garden background"
+          class="mb-4 w-28 h-28 object-contain"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/adea00ab-5a7d-4ab2-e650-b52ad2ebb9a9.jpg"
+          width="120"
+        />
+        <h3 class="text-xl font-semibold text-blue-300 mb-2">10 Trillion Coins</h3>
+        <p class="text-blue-400 mb-4">Ultimate coin pack for your garden empire.</p>
+        <button
+          class="bg-blue-700 text-white px-5 py-2 rounded-md hover:bg-blue-800 transition w-full"
+          data-coin="10 Trillion Coins"
+          data-price="25k"
+        >
+          Buy for 25k
+        </button>
+      </div>
+    </div>
+
+    <!-- Checkout Section -->
+    <section
+      id="checkout"
+      class="mt-16 bg-blue-900 rounded-lg p-8 shadow-lg max-w-4xl mx-auto"
+    >
+      <h3 class="text-2xl font-bold text-blue-300 mb-6 text-center">
+        Checkout & Payment
+      </h3>
+      <form id="checkout-form" class="space-y-6 text-blue-200">
+        <div>
+          <label
+            for="selected-coins"
+            class="block mb-1 font-semibold text-blue-300"
+            >Selected Coins</label
+          >
+          <input
+            type="text"
+            id="selected-coins"
+            name="selected-coins"
+            readonly
+            placeholder="Please select a coin package"
+            class="w-full rounded-md bg-blue-800 border border-blue-700 px-3 py-2 text-blue-100 cursor-not-allowed"
+          />
+        </div>
+        <div>
+          <label
+            for="price"
+            class="block mb-1 font-semibold text-blue-300"
+            >Price</label
+          >
+          <input
+            type="text"
+            id="price"
+            name="price"
+            readonly
+            placeholder="-"
+            class="w-full rounded-md bg-blue-800 border border-blue-700 px-3 py-2 text-blue-100 cursor-not-allowed"
+          />
+        </div>
+        <div>
+          <label
+            for="buyer-name"
+            class="block mb-1 font-semibold text-blue-300"
+            >Your Name</label
+          >
+          <input
+            type="text"
+            id="buyer-name"
+            name="buyer-name"
+            placeholder="Enter your name"
+            required
+            class="w-full rounded-md bg-blue-800 border border-blue-700 px-3 py-2 text-blue-100 placeholder-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        <div>
+          <label
+            for="buyer-phone"
+            class="block mb-1 font-semibold text-blue-300"
+            >Phone Number</label
+          >
+          <input
+            type="tel"
+            id="buyer-phone"
+            name="buyer-phone"
+            placeholder="Enter your phone number"
+            required
+            class="w-full rounded-md bg-blue-800 border border-blue-700 px-3 py-2 text-blue-100 placeholder-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        <div>
+          <label
+            for="payment-method"
+            class="block mb-1 font-semibold text-blue-300"
+            >Payment Method</label
+          >
+          <select
+            id="payment-method"
+            name="payment-method"
+            required
+            class="w-full rounded-md bg-blue-800 border border-blue-700 px-3 py-2 text-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <option value="" disabled selected>
+              Select a payment method
+            </option>
+            <option value="qris">QRIS</option>
+            <option value="dana">Dana</option>
+            <option value="ovo">OVO</option>
+            <option value="gopay">GoPay</option>
+          </select>
+        </div>
+        <div>
+          <label
+            for="notes"
+            class="block mb-1 font-semibold text-blue-300"
+            >Additional Notes</label
+          >
+          <textarea
+            id="notes"
+            name="notes"
+            rows="3"
+            placeholder="Any special instructions or requests"
+            class="w-full rounded-md bg-blue-800 border border-blue-700 px-3 py-2 text-blue-100 placeholder-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          ></textarea>
+        </div>
+        <div class="text-center">
+          <button
+            type="submit"
+            class="bg-blue-700 hover:bg-blue-800 transition text-white font-semibold px-6 py-3 rounded-md w-full md:w-auto"
+          >
+            Submit Order & Chat via WhatsApp
+          </button>
+        </div>
+      </form>
+      <p class="mt-6 text-blue-400 text-center text-sm">
+        Setelah mengisi form, klik tombol untuk langsung chat ke WhatsApp kami
+        di nomor +62 882-0082-76709 untuk konfirmasi dan pembayaran.
+      </p>
+    </section>
+  </main>
+
+  <footer class="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-blue-200 py-6 mt-12 relative z-10">
+    <div class="container mx-auto px-4 text-center text-sm">
+      ©2025 WEB RAXY PRODUK DIGITAL .
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Handle Buy buttons to fill checkout form
+    const buyButtons = document.querySelectorAll(
+      "button[data-coin][data-price]"
+    );
+    const selectedCoinsInput = document.getElementById("selected-coins");
+    const priceInput = document.getElementById("price");
+
+    buyButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        selectedCoinsInput.value = btn.getAttribute("data-coin");
+        priceInput.value = btn.getAttribute("data-price");
+        // Scroll to checkout section
+        document.getElementById("checkout").scrollIntoView({ behavior: "smooth" });
+      });
+    });
+
+    // Handle form submission to open WhatsApp chat with prefilled message
+    const checkoutForm = document.getElementById("checkout-form");
+    checkoutForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const coinPackage = selectedCoinsInput.value.trim();
+      const price = priceInput.value.trim();
+      const name = document.getElementById("buyer-name").value.trim();
+      const phone = document.getElementById("buyer-phone").value.trim();
+      const paymentMethod = document.getElementById("payment-method").value;
+      const notes = document.getElementById("notes").value.trim();
+
+      if (!coinPackage || !price) {
+        alert("Please select a coin package by clicking a Buy button.");
+        return;
+      }
+      if (!name || !phone || !paymentMethod) {
+        alert("Please fill in all required fields.");
+        return;
+      }
+
+      // Format message
+      let message = `Halo, saya ingin membeli *${coinPackage}* dengan harga *${price}*.\n`;
+      message += `Nama: ${name}\n`;
+      message += `Nomor Telepon: ${phone}\n`;
+      message += `Metode Pembayaran: ${paymentMethod.toUpperCase()}\n`;
+      if (notes) {
+        message += `Catatan: ${notes}\n`;
+      }
+      message += `Mohon info selanjutnya. Terima kasih!`;
+
+      // Encode message for URL
+      const encodedMessage = encodeURIComponent(message);
+
+      // WhatsApp number with country code, no plus sign or spaces
+      const waNumber = "62882008276709";
+
+      // Open WhatsApp chat in new tab
+      const waUrl = `https://wa.me/${waNumber}?text=${encodedMessage}`;
+      window.open(waUrl, "_blank");
+    });
+  </script>
+ </body>
+</html>
